@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PORTFOLIO CREATOR</h1>
+
+        <form id="portfolioForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" required>
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" required>
+
+            <label for="grades">Grades:</label>
+            <input type="text" id="grades" required>
+
+            <label for="passingYear">Passing Year:</label>
+            <input type="number" id="passingYear" required>
+
+            <label for="bio">About You:</label>
+            <textarea id="bio" rows="4" required></textarea>
+
+            <label for="photoLink">Google Drive Link for Your Photo:</label>
+            <input type="url" id="photoLink" placeholder="Enter Google Drive photo link" required>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+
+        <div id="portfolioOutput" class="portfolio-output">
+            <h2>Your Portfolio</h2>
+            <div id="portfolioDetails" class="portfolio-details">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
